@@ -1,5 +1,3 @@
-console.log("Loading Color Space Converter...");
-
 class ColorSpaceConverter {
 	constructor() {}
 

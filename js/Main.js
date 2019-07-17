@@ -1,4 +1,4 @@
-console.log("Initializing...");
+console.log("Starting palette mapper...");
 
 let baseColorsMap = new Map();
 baseColorsMap.set("primary", "#192d49");
