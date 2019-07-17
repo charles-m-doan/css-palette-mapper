@@ -1,5 +1,4 @@
-console.log("Testing...");
-
 const app = new Html("#app");
-
-console.log(app);
+console.log("----------Insertion Point-----------------");
+console.log(app.render());
+console.log("------------------------------------------");

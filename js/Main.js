@@ -1,17 +1,17 @@
-console.log("Starting palette mapper...");
-
-let baseColorsMap = new Map();
+const baseColorsMap = new Map();
 baseColorsMap.set("primary", "#192d49");
 baseColorsMap.set("secondary", "#468189");
 baseColorsMap.set("complement", "#f6edd6");
 baseColorsMap.set("neutral", "#797979");
+const lightnessIncrements = 0.1;
+const asRGBStrings = true;
+const websitePalette = new WebsitePalette(
+	baseColorsMap,
+	lightnessIncrements,
+	asRGBStrings
+);
 
-let lightnessIncrements = 0.1;
-
-let asRGBStrings = true;
-
-let wp = new WebsitePalette(baseColorsMap, lightnessIncrements, asRGBStrings);
-
-console.log(wp);
-
-wp.mapPaletteToRoot();
+websitePalette.mapPaletteToRoot();
+console.log("----------Palette Mapped to Root----------");
+console.log(websitePalette);
+console.log("------------------------------------------");
